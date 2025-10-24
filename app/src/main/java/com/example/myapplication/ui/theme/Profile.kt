@@ -88,7 +88,6 @@ fun HomePage(modifier: Modifier) {
             text = stringResource(id = R.string.description),
             fontSize = 19.sp,
             textAlign = TextAlign.Center,
-            fontFamily = FontFamily.Cursive,
             modifier = Modifier.padding(top = 5.dp)
         )
 
@@ -212,6 +211,16 @@ fun HomePage(modifier: Modifier) {
                 )
             }
         }
-
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+        ){
+            Text(
+                text = stringResource(id = R.string.copyright),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
+        }
     }
 }
