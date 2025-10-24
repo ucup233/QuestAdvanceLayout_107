@@ -22,6 +22,14 @@ fun HomePage(modifier: Modifier){
         .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
+        Image(
+            painter = painterResource(id = R.drawable.foto),
+            contentDescription = "Profile Picture",
+            modifier = Modifier
+                .size(150.dp)
+                .clip(CircleShape),
+            contentScale = ContentScale.Crop
+        )
 
     }
 }
