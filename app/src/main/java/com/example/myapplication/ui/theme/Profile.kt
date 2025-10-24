@@ -124,7 +124,8 @@ fun HomePage(modifier: Modifier){
                     modifier = Modifier
                         .size(size = 100.dp)
                         .padding(all = 5.dp)
-                        .clip(CircleShape)
+                        .clip(CircleShape),
+                    contentScale = ContentScale.Crop
                 )
                 Spacer(
                     modifier = Modifier.width(width = 20.dp)
@@ -134,6 +135,51 @@ fun HomePage(modifier: Modifier){
                     fontSize = 23.sp,
                     color = White
                     )
+                Spacer(
+                    modifier = Modifier.width(width = 50.dp)
+                )
+                Image(
+                    painter = painterResource(id = R.drawable.go),
+                    contentDescription = null,
+
+                    modifier = Modifier
+                        .size(size = 25.dp)
+                        .clip(CircleShape),
+                    contentScale = ContentScale.Crop
+                )
+
+            }
+        }
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.DarkGray
+            )
+        ){
+            Row(
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.CenterVertically)
+            {
+                Image(
+                    painter = painterResource(id = R.drawable.instagram),
+                    contentDescription = null,
+
+                    modifier = Modifier
+                        .size(size = 100.dp)
+                        .padding(all = 5.dp)
+                        .clip(CircleShape),
+                    contentScale = ContentScale.Crop
+                )
+                Spacer(
+                    modifier = Modifier.width(width = 20.dp)
+                )
+                Text(
+                    text = stringResource(R.string.username),
+                    fontSize = 23.sp,
+                    color = White
+                )
                 Spacer(
                     modifier = Modifier.width(width = 50.dp)
                 )
