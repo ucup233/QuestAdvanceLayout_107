@@ -84,6 +84,9 @@ fun HomePage(modifier: Modifier){
             modifier = Modifier
                 .padding(top = 10.dp)
         )
-
+        Text(
+            text = stringResource(id = R.string.username),
+            fontSize = 18.sp
+        )
     }
 }
