@@ -1,7 +1,9 @@
 package com.example.myapplication.ui.theme
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -30,6 +32,43 @@ fun HomePage(modifier: Modifier){
                 .clip(CircleShape),
             contentScale = ContentScale.Crop
         )
-
+        Row(
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.padding(top = 10.dp)
+        ){
+            Image(
+                painter = painterResource(id = R.drawable.instagram),
+                contentDescription = "Logo Instagram",
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape),
+                contentScale = ContentScale.Crop
+            )
+            Image(
+                painter = painterResource(id = R.drawable.tiktok),
+                contentDescription = "Logo TikTok",
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape),
+                contentScale = ContentScale.Crop
+            )
+            Image(
+                painter = painterResource(id = R.drawable.gmail),
+                contentDescription = "Logo Gmail",
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape),
+                contentScale = ContentScale.Crop
+            )
+            Image(
+                painter = painterResource(id = R.drawable.linkedin),
+                contentDescription = "Logo LinkedIn",
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape),
+                contentScale = ContentScale.Crop
+            )
+        }
     }
 }
