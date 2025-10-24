@@ -88,5 +88,9 @@ fun HomePage(modifier: Modifier){
             text = stringResource(id = R.string.username),
             fontSize = 18.sp
         )
+        Text(
+            text = stringResource(id = R.string.description),
+            fontSize = 19.sp
+        )
     }
 }
